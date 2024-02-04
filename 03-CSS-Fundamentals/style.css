@@ -10,6 +10,12 @@ body {
   border-top: 10px solid greenyellow;
 }
 
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main-header {
   background-color: #f7f7f7;
   padding: /*Top-Bottom*/ 20px /*Left-Right*/ 40px;
