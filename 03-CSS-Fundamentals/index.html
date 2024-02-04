@@ -11,6 +11,7 @@
       <h1>📘 The Code Magazine</h1>
 
       <nav>
+        <strong>This is the navigation</strong>
         <a href="blog.html">Blog</a>
         <a href="#">Challenges</a>
         <a href="#">Flexbox</a>
@@ -19,7 +20,7 @@
     </header>
 
     <article>
-      <header>
+      <header class="post-header">
         <h2>The Basic Language of the Web: HTML</h2>
 
         <img
@@ -33,7 +34,13 @@
           Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
         </p>
 
-        <img src="img/post-img.jpg" alt="post-img" width="500" height="200" />
+        <img
+          class="post_img"
+          src="img/post-img.jpg"
+          alt="post-img"
+          width="500"
+          height="200"
+        />
       </header>
 
       <button class="but5e78">Click me</button>
@@ -86,7 +93,7 @@
         web. Here are 5 of them:
       </p>
 
-      <ul>
+      <ul class="ol4wdc15">
         <li>To be able to use the fundamental web dev language</li>
         <li>
           To hand-craft beautiful websites instead of relying on tools like
@@ -98,34 +105,36 @@
       </ul>
 
       <p>Hopefully you learned something new here. See you next time!</p>
-
-      <aside>
-        <h4>Related posts</h4>
-        <ul class="k14s78">
-          <li>
-            <img src="img\related-1.jpg" width="75" /><a href="#"
-              >How to Learn Web Development</a
-            >
-            <p class="p16f877"><strong>By Jonas Schmedtmann</strong></p>
-          </li>
-          <li>
-            <img src="img\related-2.jpg" width="75" /><a href="#"
-              >The Unknown Powers of CSS</a
-            >
-            <p class="p16f877"><strong>By Jim Dillon</strong></p>
-          </li>
-          <li>
-            <img src="img\related-3.jpg" width="75" /><a href="#"
-              >Why JavaScript is Awesome</a
-            >
-            <p class="p16f877"><strong>By Matilda</strong></p>
-          </li>
-        </ul>
-      </aside>
     </article>
 
+    <aside>
+      <h4>Related posts</h4>
+      <ul class="k14s78">
+        <li>
+          <img src="img\related-1.jpg" width="75" /><a href="#"
+            >How to Learn Web Development</a
+          >
+          <p class="p16f877"><strong>By Jonas Schmedtmann</strong></p>
+        </li>
+        <li>
+          <img src="img\related-2.jpg" width="75" /><a href="#"
+            >The Unknown Powers of CSS</a
+          >
+          <p class="p16f877"><strong>By Jim Dillon</strong></p>
+        </li>
+        <li>
+          <img src="img\related-3.jpg" width="75" /><a href="#"
+            >Why JavaScript is Awesome</a
+          >
+          <p class="p16f877"><strong>By Matilda</strong></p>
+        </li>
+      </ul>
+    </aside>
+
     <footer>
-      <p class="copyright">Copyright &copy; 2027 by The Code Magazine</p>
+      <p id="copyright" class="copyright text">
+        Copyright &copy; 2027 by The Code Magazine
+      </p>
     </footer>
   </body>
 </html>
