@@ -2,6 +2,12 @@
   /*Global Reset*/
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+.related {
+  list-style: none;
+  margin-left: 0;
 }
 
 /*PAGE SECTION*/
@@ -13,14 +19,13 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .main-header {
   background-color: #f7f7f7;
-  background-color: #5f5f5f;
   padding: /*Top-Bottom*/ 20px /*Left-Right*/ 40px;
 }
 
@@ -39,9 +44,9 @@ article {
 
 aside {
   background-color: #f7f7f7;
-  border: 5px solid #1098ad;
-  padding: /*Top-Bottom*/ 50px /*Left-Right*/ 0;
-  width: 500px;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 40px;
 }
 
 /*SMALLER ELEMENT*/
@@ -72,6 +77,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 p {
@@ -237,7 +243,6 @@ nav p {
 }
 
 .author {
-  /* padding-left: 10px; */
   float: left;
   padding-top: 10px;
   margin-left: 20px;
@@ -255,4 +260,18 @@ nav {
   clear: both;
   content: "";
   display: block;
+}
+
+article {
+  width: 900px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
 }

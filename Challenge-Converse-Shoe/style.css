@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -41,6 +42,7 @@ body {
 /* PRODUCT INFORMATION */
 .price {
   font-size: 24px;
+  float: left;
 }
 
 .shipping {
@@ -48,7 +50,12 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  float: right;
+}
+
+.div-product-description {
+  clear: both;
 }
 
 .more-info:link,
@@ -126,4 +133,26 @@ body {
 .add-cart:hover {
   color: #000;
   background-color: #fff;
+}
+
+.the-img {
+  float: left;
+  margin-right: 40px;
+}
+
+.middle-box {
+  /*(825 - 8 - 250 - 80) / 2*/
+  background-color: aquamarine;
+  width: 243px;
+  float: left;
+  margin-right: 40px;
+  padding-top: 10px;
+}
+
+.right-box {
+  /*(825 - 8 - 250 - 80) / 2*/
+  background-color: bisque;
+  width: 243px;
+  float: left;
+  padding-top: 10px;
 }
