@@ -40,9 +40,15 @@ body {
 }
 
 /* PRODUCT INFORMATION */
+.price-shipping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
 .price {
   font-size: 24px;
-  float: left;
 }
 
 .shipping {
@@ -50,8 +56,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-top: 10px;
-  float: right;
 }
 
 .div-product-description {
@@ -72,7 +76,7 @@ body {
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   margin-top: 5px;
 }
 
@@ -86,15 +90,15 @@ body {
 }
 
 .shoes-color {
+  display: flex;
   margin-top: 10px;
+  gap: 15px;
 }
 
 .shoe-color {
-  margin: 5px;
   width: 22px;
   height: 22px;
   border: 1px solid black;
-  display: inline-block;
 }
 
 .red {
@@ -135,24 +139,21 @@ body {
   background-color: #fff;
 }
 
+.Torso {
+  display: flex;
+  gap: 15px;
+}
+
 .the-img {
-  float: left;
-  margin-right: 40px;
+  background-color: none;
 }
 
 .middle-box {
-  /*(825 - 8 - 250 - 80) / 2*/
   background-color: aquamarine;
-  width: 243px;
-  float: left;
-  margin-right: 40px;
-  padding-top: 10px;
+  flex: 1;
 }
 
 .right-box {
-  /*(825 - 8 - 250 - 80) / 2*/
   background-color: bisque;
-  width: 243px;
-  float: left;
-  padding-top: 10px;
+  flex: 1;
 }
