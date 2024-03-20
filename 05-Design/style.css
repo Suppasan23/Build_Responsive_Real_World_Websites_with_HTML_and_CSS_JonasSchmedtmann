@@ -6,6 +6,11 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
+/*
+MAIN COLOR: #087f5b
+GREY COLOR: #343a40
+*/
+
 * {
   /*Global Reset*/
   margin: 0;
@@ -17,7 +22,9 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
 }
 
 .container {
@@ -30,8 +37,31 @@ section {
   margin-bottom: 48px;
 }
 
+.container header {
+  /* background-color: bisque; */
+}
+
+.container section:nth-child(2) {
+  /* background-color: aquamarine; */
+}
+
+.container section:nth-child(3) {
+  /* background-color: indianred; */
+}
+
+.container section:nth-child(4) {
+  /* background-color: paleturquoise; */
+}
+
+.container footer {
+  /* background-color: khaki; */
+}
+
 h2 {
   margin-bottom: 48px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+  /* 24 / 30 / 36  */
 }
 
 .grid-3-cols {
@@ -40,6 +70,29 @@ h2 {
   column-gap: 80px;
 }
 
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
@@ -58,10 +111,15 @@ header {
 
 h1 {
   margin-bottom: 24px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
 }
 
 .header-text {
   margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 img {
@@ -74,13 +132,19 @@ img {
 
 .features-title {
   margin-bottom: 16px;
+  font-size: 20px;
 }
 
 .features-text {
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  padding: 24px;
 }
 
 .testimonial-box {
@@ -90,11 +154,14 @@ img {
 
 .testimonial-box h2 {
   margin-bottom: 24px;
+  font-size: 24px;
 }
 
 .testimonial-text {
   font-style: italic;
   margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 /* CHAIRS */
@@ -128,8 +195,12 @@ h3 {
 .chair-price {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
 }
 
 footer {
   margin-bottom: 48px;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  color: #495057;
 }
