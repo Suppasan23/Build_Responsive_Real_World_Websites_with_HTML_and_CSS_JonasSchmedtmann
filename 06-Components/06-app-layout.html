@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App-Layout</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto auto 1fr auto;
+        grid-template-rows: 50px auto;
+        font-family: sans-serif;
+      }
+
+      nav {
+        background-color: #343a40;
+        grid-row: 1/-1;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px 20px;
+        color: #fff;
+      }
+
+      menu {
+        background-color: #6741d9;
+        grid-column: 2/-1;
+        display: flex;
+        font-size: 12px;
+        font-weight: 600;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      menu div:nth-child(1) {
+        margin: 20px 20px;
+        display: flex;
+        gap: 10px;
+      }
+      menu div:nth-child(1) a:link,
+      menu div:nth-child(1) a:visited {
+        text-decoration: none;
+        color: #fff;
+        background-color: #5f3dc4;
+        padding: 5px 15px;
+      }
+      menu div:nth-child(1) a:hover,
+      menu div:nth-child(1) a:active {
+        text-decoration: none;
+        color: #fff;
+        background-color: #862e9c;
+        padding: 5px 15px;
+      }
+
+      menu div:nth-child(2) {
+        margin-right: 20px;
+      }
+      menu div:nth-child(2) a:link,
+      menu div:nth-child(2) a:visited {
+        text-decoration: none;
+        color: #fff;
+        background-color: #c92a2a;
+        padding: 5px 15px;
+      }
+
+      menu div:nth-child(2) a:hover,
+      menu div:nth-child(2) a:active {
+        text-decoration: none;
+        color: #fff;
+        background-color: #a61e4d;
+        padding: 5px 15px;
+      }
+
+      section {
+        background-color: #dee2e6;
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: scroll;
+        gap: 20px;
+        padding: 20px 20px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      section a:link,
+      section a:visited {
+        background-color: #868e96;
+        text-decoration: none;
+        color: black;
+        padding: 25px 70px;
+      }
+      section a:hover,
+      section a:active {
+        background-color: #495057;
+        text-decoration: none;
+        color: black;
+        padding: 25px 70px;
+      }
+
+      main {
+        background-color: #f8f9fa;
+        grid-column: 3/4;
+        display: flex;
+        padding: 20px 20px;
+        justify-content: center;
+        font-weight: 600;
+      }
+      aside {
+        background-color: #dee2e6;
+        grid-column: 4/5;
+        display: flex;
+        justify-content: center;
+        padding: 20px 20px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body class="the-contianer">
+    <nav>Nav</nav>
+    <menu>
+      <div>
+        <a href="#">New</a>
+        <a href="#">Replay</a>
+        <a href="#">Forward</a>
+        <a href="#">Mark unread</a>
+      </div>
+      <div>
+        <a href="#">Trash</a>
+      </div>
+    </menu>
+    <section>
+      <a href="#">Email 1</a>
+      <a href="#">Email 2</a>
+      <a href="#">Email 3</a>
+      <a href="#">Email 4</a>
+      <a href="#">Email 5</a>
+      <a href="#">Email 6</a>
+      <a href="#">Email 7</a>
+      <a href="#">Email 8</a>
+      <a href="#">Email 9</a>
+      <a href="#">Email 10</a>
+    </section>
+    <main>Email View</main>
+    <aside>Additional Info</aside>
+  </body>
+</html>
