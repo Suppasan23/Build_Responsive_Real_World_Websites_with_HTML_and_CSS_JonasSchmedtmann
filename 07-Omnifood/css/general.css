@@ -35,6 +35,8 @@
   --- 05 SHADOWS
 
   --- 06 BORDER-RADIUS
+  Default: 9px
+  Medium: 11px
 
   --- 07 WHITESPACE
 
@@ -160,4 +162,8 @@ body {
 .btn--outline:hover,
 .btn--outline:active {
   background-color: #e6e6e6;
+}
+
+strong {
+  font-weight: 600;
 }
