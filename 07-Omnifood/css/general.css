@@ -25,7 +25,7 @@
 
   - Promary:  #e67e22
   - Tints:    #fae5d3,#fdf2e9,#eb984e
-  - Shades:   #cf711f
+  - Shades:   #452604,#cf711f
   - Accents:
   - Greys:
   #6f6f6f (lightest grey allowed on #fdf2e9)
@@ -139,6 +139,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -147,8 +148,9 @@ body {
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
-
+  cursor: pointer;
   transition: all 200ms;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -171,6 +173,22 @@ body {
 .btn--outline:hover,
 .btn--outline:active {
   background-color: #c0eb75;
+}
+
+.btn--form {
+  background-color: #452604;
+  color: #fdf2e9;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border-radius: 0px;
+  align-self: end;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -212,6 +230,13 @@ body {
 .list-icon-X {
   font-size: 3rem;
   color: darkred;
+}
+
+*:focus {
+  outline: none;
+  /*   outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /*HELPER/SETTING CLASS*/
