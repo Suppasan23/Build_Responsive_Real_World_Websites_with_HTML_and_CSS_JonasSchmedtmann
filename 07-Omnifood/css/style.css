@@ -19,35 +19,43 @@
 /************************************/
 /*NAVIGATION*/
 /************************************/
+.main-nav {
+  width: 70rem;
+}
+
 .main-nav-list {
   list-style: none;
-  display: flex;
+  display: grid;
   align-items: center;
-  gap: 3.2rem;
+  justify-items: end;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.main-nav-list li {
+  text-align: center;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: #333;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 50ms ease;
-  padding: 1.6rem 0.5rem;
   background-color: #fdf2e9;
+  width: 14rem;
+  padding: 0.8rem;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
   font-weight: 800;
   color: #b8651b;
-  padding: 1.6rem 0.355rem;
 }
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
-  padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
   background-color: #e67e22;
@@ -55,7 +63,6 @@
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  padding: 1.2rem 2.255rem;
 }
 
 /************************************/
@@ -472,7 +479,8 @@
 /*CALL TO ACTION SECTION*/
 /************************************/
 .section-cta {
-  padding: 9.6rem 0;
+  /*top right bottom left*/
+  padding: 4.8rem 0 12.8rem 0;
 }
 
 .cta {
@@ -562,4 +570,82 @@
   /*   outline: 4px dotted #e67e22;
   outline-offset: 8px; */
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/************************************/
+/*FOOTER*/
+/************************************/
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.grid--footer {
+  grid-template-columns: 3fr 3fr 2fr 2fr 2fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+  color: #555;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.contacts :first-child {
+  margin-bottom: 2.4rem;
+}
+
+.footernav {
+  list-style: none;
+  display: flex;
+
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link,
+.footer-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link,
+.footer-link {
+  color: #555;
 }
