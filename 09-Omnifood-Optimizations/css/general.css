@@ -58,6 +58,7 @@ html {
   /* 10px ÷ 16px = 0.625 = 62.5% */
   font-size: 62.5%; /*10px*/
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
